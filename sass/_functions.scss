@@ -1,0 +1,17 @@
+@use 'sass:math';
+
+
+
+//change px to rem
+@function rem($pixels, $context: 16) {
+    @return (math.div($pixels, $context)) * 1rem;
+}
+
+//change px to em - only for media query or width for wrapper/container.
+
+@function em($pixels, $context: 16) {
+    @return (math.div($pixels , $context)) * 1em;
+}
+
+
+

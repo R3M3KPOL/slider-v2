@@ -1,0 +1,134 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.grid-container {
+  display: grid;
+  place-items: center stretch;
+  margin: 0 auto;
+  max-width: em(2560);
+}
+
+h3,
+p,
+a,
+span,
+cite {
+  font-family: "Poppins", sans-serif;
+}
+
+h3 {
+  font-size: clamp(1.1875rem, 2.4vw, 1.5rem);
+  font-weight: 500;
+}
+
+p,
+span,
+cite {
+  font-weight: 200;
+}
+
+p, .services__list {
+  font-size: clamp(1.03125rem, 2vw, 1.25rem);
+}
+
+p {
+  padding: 1rem;
+  text-align: center;
+}
+
+a {
+  font-size: clamp(0.8125rem, 1.3vw, 1.125rem);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.reviews__block-comment > p {
+  font-style: italic;
+  text-align: start;
+  padding: 1rem 0;
+}
+
+.reviews__person {
+  font-size: clamp(0.8125rem, 1.8vw, 1rem);
+}
+
+.reviews__author > a {
+  font-size: clamp(0.71875rem, 1.6vw, 0.875rem);
+}
+
+.reviews__header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 450px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.reviews__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.reviews__button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 2.875em;
+  cursor: pointer;
+}
+.reviews__button > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.reviews__container {
+  width: clamp(18.75em, 75vw, 75em);
+  margin: auto;
+  overflow: hidden;
+}
+.reviews__box {
+  display: grid;
+  grid-template-columns: repeat(6, 100%);
+  justify-items: center;
+  background-color: blanchedalmond;
+}
+@media (min-width: 48em) {
+  .reviews__box {
+    grid-template-columns: repeat(6, 50%);
+  }
+}
+.reviews__figure {
+  background-color: #cbf5ef;
+  border-radius: 10%;
+  margin: 1.25rem;
+  padding: 2rem;
+}
+.reviews__block-comment > span {
+  border-bottom: 0.09375rem solid #009581;
+}
+.reviews__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 0.875rem;
+  margin: 2rem 0;
+}
+.reviews__img {
+  width: 6.25em;
+  height: 6.25rem;
+  border-radius: 10%;
+}/*# sourceMappingURL=style.css.map */

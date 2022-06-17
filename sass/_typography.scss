@@ -1,0 +1,53 @@
+
+@use  'functions'as *;
+@use  'variables'as *;
+
+$font-family-poppins: 'Poppins', sans-serif;
+
+h3,
+p,
+a,
+span,
+cite  {
+    font-family: $font-family-poppins;
+}
+
+h3{ 
+    font-size: clamp(rem(19), 2.4vw, rem(24));
+    font-weight: $poppins-500;
+}
+
+p,
+span,
+cite {
+font-weight: $poppins-200;
+}
+
+p,.services__list{
+font-size: clamp(rem(16.5), 2vw, rem(20)); 
+}
+
+p{
+padding: rem(16);
+text-align: center;
+}
+
+
+a{  
+    font-size: clamp(rem(13), 1.3vw, rem(18));
+    font-weight: $poppins-500;
+    text-transform: uppercase;
+}
+
+.reviews__block-comment>p{
+    font-style:italic;
+    text-align: start;
+    padding: rem(16) 0;
+}
+
+.reviews__person{
+    font-size: clamp(rem(13), 1.8vw, rem(16));
+}
+.reviews__author>a{
+     font-size: clamp(rem(11.5), 1.6vw, rem(14));
+}

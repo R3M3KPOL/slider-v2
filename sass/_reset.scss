@@ -1,0 +1,16 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.grid-container{
+    display: grid;
+	place-items: center stretch;
+    margin: 0 auto;
+    max-width: em(2560);
+}
